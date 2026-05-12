@@ -69,3 +69,32 @@ int main() {
 
     return 0;
 }
+// INPUT and OUTPUT
+// Enter number of vertices and edges: 6 8
+// Enter edges (format: a-b weight):
+// a-b 5     
+// a-e 7
+// a-c 8
+// a-d 4
+// b-f 2
+// c-d 2
+// d-f 3
+// c-e 3
+// MST: 14
+
+
+// for parallel edges and loops 
+// Enter number of vertices and edges: 6 11
+// Enter edges (format: a-b weight):
+// a-b 5
+// a-e 7
+// a-c 8
+// a-d 4
+// b-f 2
+// c-d 2
+// d-f 3
+// c-e 3
+// a-b 6
+// b-f 3
+// d-d 1
+// MST: 14

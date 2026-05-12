@@ -35,11 +35,14 @@ void unionSet(int u, int v)
 int main()
 {
     int n, e;
+    cout << "Enter the number of vertices and edges: ";
     cin >> n >> e;
 
     // each edge = {weight, u, v}
+
     vector<vector<int>> edges;
 
+    cout << "Enter edges in the format (u v w)(example: 0 2 3):\n";
     for (int i = 0; i < e; i++)
     {
         int u, v, w;
@@ -76,3 +79,35 @@ int main()
 
     return 0;
 }
+
+// INPUT and OUTPUT
+
+// Enter the number of vertices and edges: 6 8
+// Enter edges in the format (u v w)(example: 0 2 3):
+// 0 1 7
+// 0 3 3
+// 1 3 8
+// 1 4 4
+// 3 4 2
+// 4 5 3
+// 1 2 5
+// 2 5 2
+// Total cost of MST = 14
+
+
+// for parallel edges and loops 
+
+// Enter the number of vertices and edges: 6 11
+// Enter edges in the format (u v w)(example: 0 2 3):
+// 0 1 7
+// 0 3 3
+// 1 3 8
+// 1 4 4
+// 3 4 2
+// 4 5 3
+// 1 2 5
+// 2 5 2
+// 1 2 6
+// 2 5 3
+// 4 4 2
+// Total cost of MST = 14

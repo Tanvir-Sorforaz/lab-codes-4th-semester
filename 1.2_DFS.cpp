@@ -49,4 +49,17 @@ int main() {
     return 0;
 }
 
-
+//example input
+/*
+Enter the number of vertices:6
+Enter graph data in matrix form:
+0 1 1 0 0 0
+1 0 0 1 1 0
+1 0 0 0 0 1
+0 1 0 0 0 0
+0 1 0 0 0 0
+0 0 1 0 0 0
+Enter the starting vertex:1 
+The node which are reachable are:
+1 2 4 5 3 6
+*/
