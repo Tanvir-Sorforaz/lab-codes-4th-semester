@@ -1,3 +1,4 @@
+// Fractional Knapsack Problem
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -51,3 +52,11 @@ int main() {
 
     return 0;
 }
+
+/*
+Enter number of items: 7
+Enter profits: 5 10 15 7 8 9 4
+Enter weights: 1 3 5 4 1 3 2
+Enter knapsack capacity: 15
+Maximum value = 51
+*/

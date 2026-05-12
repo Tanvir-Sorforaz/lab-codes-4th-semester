@@ -1,3 +1,4 @@
+//0/1 Knapsack Problem
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,7 +10,7 @@ int main() {
 
     vector<int> val(n), wt(n);
 
-    cout << "Enter values of items: ";
+    cout << "Enter profit of items: ";
     for(int i = 0; i < n; i++) {
         cin >> val[i];
     }
@@ -49,6 +50,28 @@ int main() {
     }
 
     cout << "Maximum value = " << dp[n][c];
+    // print the items included in the knapsack
+    int w = c;
+    cout << "\nItems included in the knapsack: \n";
+    for(int i = n; i > 0 && w >= 0; i--) {
+        if(dp[i][w] != dp[i-1][w]) {
+            cout << "Item " << i << " (profit: " << val[i-1] << ", weight: " << wt[i-1] << ")\n";
+            w -= wt[i-1];
+        }
+    }
+
 
     return 0;
 }
+
+
+/*
+Enter number of items: 4
+Enter profit of items: 4 3 6 5
+Enter weights of items: 3 2 5 4
+Enter knapsack capacity: 5
+Maximum value = 7
+Items included in the knapsack: 
+Item 2 (profit: 3, weight: 2)
+Item 1 (profit: 4, weight: 3)
+*/
