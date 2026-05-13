@@ -50,6 +50,12 @@ int main() {
     }
     cout << "Maximum value = " << totalValue << endl;
 
+    //print the items included in the knapsack
+    cout << "Items included in the knapsack: \n";
+    for (int j = 0; j < i; j++) {
+        cout << "Item " << j + 1 << " (profit: " << profit[j] << ", weight: " << weight[j] << ")\n";
+    }
+
     return 0;
 }
 
@@ -59,4 +65,11 @@ Enter profits: 5 10 15 7 8 9 4
 Enter weights: 1 3 5 4 1 3 2
 Enter knapsack capacity: 15
 Maximum value = 51
+Items included in the knapsack: 
+Item 1 (profit: 8, weight: 1)
+Item 2 (profit: 5, weight: 1)
+Item 3 (profit: 10, weight: 3)
+Item 4 (profit: 15, weight: 5)
+Item 5 (profit: 9, weight: 3)
+Item 6 (profit: 4, weight: 2)
 */
